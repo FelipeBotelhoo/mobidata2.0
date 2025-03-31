@@ -1,0 +1,144 @@
+/* footer.style.css - Design Premium */
+
+:root {
+  --preto-profundo: #0a0a0a;
+  --preto-card: #121212;
+  --vermelho-energetico: #ff2d4a;
+  --branco-puro: #ffffff;
+  --branco-suave: #e8e8e8;
+  --cinza-bordas: #333333;
+}
+
+.luxury-footer {
+  background: linear-gradient(to right, var(--preto-profundo), var(--preto-card));
+  color: var(--branco-suave);
+  padding: 2rem 0;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--vermelho-energetico), transparent);
+  animation: scanline 6s linear infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--branco-puro);
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-shadow: 0 0 10px rgba(255, 45, 74, 0.3);
+}
+
+.footer-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--vermelho-energetico);
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cinza-bordas), transparent);
+  margin: 1rem 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: var(--branco-suave);
+  opacity: 0.8;
+}
+
+.footer-version {
+  font-size: 0.8rem;
+  color: var(--vermelho-energetico);
+  letter-spacing: 1px;
+}
+
+/* Efeito Hover para itens clicáveis */
+.luxury-footer a {
+  transition: all 0.3s ease;
+}
+
+.luxury-footer a:hover {
+  color: var(--vermelho-energetico);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .luxury-footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+  
+  .footer-divider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 0 1rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+
+.footer-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%23d4af37' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+}

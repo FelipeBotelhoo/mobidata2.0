@@ -1,0 +1,144 @@
+:root {
+  --preto-profundo: #0a0a0a;
+  --vermelho-vivo: #ff2d4a;
+  --branco-puro: #ffffff;
+}
+
+.custom-navbar {
+  background-color: var(--preto-profundo);
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+ height: 90px;
+}
+
+
+.custom-navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-brand {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 5vh;
+  width: auto;
+  transition: transform 0.3s ease;
+  margin-top: -35px;
+  margin-bottom: -35px;
+}
+
+
+.navbar-collapse {
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-custom {
+  color: var(--branco-puro) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+  position: relative;
+}
+
+.nav-link-custom:hover {
+  color: var(--vermelho-vivo) !important;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--vermelho-vivo);
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  width: 70%;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .custom-navbar {
+   height: 100%;
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+  height: 100%;
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .nav-link-custom {
+    padding: 0.3rem 0.5rem !important;
+    text-align: center;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .custom-navbar {
+   height: 100%;
+  }
+  
+
+  .navbar-collapse {
+    justify-content: center !important;
+    text-align: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav-link-custom {
+    padding: 0.5rem 0 !important;
+    margin: 0.25rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-link-custom::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,175 @@
+/* Tema Dark Pro - MobiData */
+:root {
+     --deep-space: #0A0A0A;
+     --cosmic-gray: #1A1A1A;
+     --stellar-card: #252525;
+     --nebula-border: #333;
+     --supernova: #FF2D4A;
+     --white-dwarf: #F0F0F0;
+     --pulsar: #FF5E78;
+     --quasar: #B0B0B0;
+   }
+   
+   /* Estrutura Principal */
+   .App {
+     min-height: 100vh;
+   /*   background: radial-gradient(circle at center, #1A1A1A 0%, #0A0A0A 100%); */
+     color: var(--white-dwarf);
+     font-family: 'Inter', 'Segoe UI', sans-serif;
+     display: flex;
+     flex-direction: column;
+   }
+   
+
+
+   /* Container Fluido Moderno */
+   .container {
+     width: 100%;
+     max-width: 1440px;
+     padding: 0 40px;
+     margin: 0 auto;
+   }
+   
+ 
+   .search-container {
+     padding: 60px 0 30px;
+     background: linear-gradient(135deg, #1E1E1E 0%, #2A2A2A 50%, #1E1E1E 100%);
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .search-container::before {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background: linear-gradient(90deg, transparent, var(--supernova), transparent);
+     animation: scanline 6s linear infinite;
+   }
+   
+   @keyframes scanline {
+     0% { transform: translateX(-100%); }
+     100% { transform: translateX(100%); }
+   }
+   
+
+   .button-add {
+     margin: 40px 0;
+     display: flex;
+     justify-content: flex-end;
+   
+   }
+   
+
+.no-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: rgba(250, 248, 248, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--supernova);
+  border-radius: 12px;
+  margin: 2rem 0;
+  padding: 3rem;
+  text-align: center;
+
+}
+
+
+.titulo-noUser {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--deep-space);
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+.titulo-noUser::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--supernova), transparent);
+  border-radius: 3px;
+}
+
+.no-user p {
+  color: var(--cosmic-gray);
+  font-size: 1.15rem;
+  max-width: 500px;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+
+}
+
+.no-user p strong {
+  color: var(--pulsar);
+  font-weight: 600;
+}
+
+
+.no-user .action-button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--supernova) 0%, var(--pulsar) 100%);
+  color: var(--white-dwarf);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 
+    0 4px 20px rgba(255, 45, 74, 0.3),
+    0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.no-user .action-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 6px 30px rgba(255, 45, 74, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: buttonGlow 1.5s infinite alternate;
+}
+
+
+
+@media (max-width: 768px) {
+  .no-user {
+    padding: 2rem;
+    min-height: 300px;
+  }
+  
+  .titulo-noUser {
+    font-size: 2rem;
+  }
+  
+  .no-user-icon {
+    font-size: 3.5rem;
+  }
+}
+
+@keyframes animacao-no-user {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes no-user-animacao {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

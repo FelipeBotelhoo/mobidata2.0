@@ -1,0 +1,147 @@
+/* dialog.style.css - Modal Premium */
+
+:root {
+    --preto-profundo: #0a0a0a;
+    --preto-card: #1a1a1a;
+    --vermelho-vivo: #ff2d4a;
+    --vermelho-escuro: #cc0000;
+    --branco-puro: #ffffff;
+    --cinza-bordas: #333333;
+  }
+  
+  /* Modal Principal */
+  .premium-dialog {
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    width: 48vh !important;
+  }
+  
+  .premium-dialog .modal-content {
+    background-color: var(--preto-card);
+    border: 1px solid var(--cinza-bordas);
+    border-radius: 20px;
+    color: var(--branco-puro);
+  }
+  
+
+  .dialog-header {
+    background: linear-gradient(to right, var(--preto-profundo), var(--preto-card));
+    border-bottom: 1px solid var(--vermelho-vivo);
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .dialog-header .close {
+    color: var(--branco-puro);
+    text-shadow: none;
+    opacity: 0.8;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+  
+  .dialog-header .close:hover {
+    color: var(--vermelho-vivo);
+    opacity: 1;
+  }
+  
+  .dialog-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--branco-puro);
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .warning-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: var(--vermelho-vivo);
+    color: var(--branco-puro);
+    border-radius: 50%;
+    margin-right: 12px;
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  
+
+  .dialog-body {
+    padding: 2rem;
+    text-align: center;
+
+  }
+  
+  .dialog-message {
+    font-size: 1.1rem;
+    padding: 3vh;
+    line-height: 1.6;
+    color: var(--branco-puro);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  
+  /* Rodapé */
+  .dialog-footer {
+    border-top: 1px solid var(--cinza-bordas);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dialog-btn {
+    min-width: 120px;
+    padding: 10px 25px;
+    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .dialog-btn-cancel {
+    background: transparent;
+    border: 1px solid var(--cinza-bordas);
+    color: var(--vermelho-vivo);
+  }
+  
+  .dialog-btn-cancel:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--vermelho-vivo);
+    color: var(--vermelho-vivo);
+  }
+  
+  .dialog-btn-confirm {
+    background-color:rgba(1, 95, 13, 0.712);
+    border: none;
+  }
+  
+   .dialog-btn-confirm:hover {
+    background-color:#015f0db6;
+    transform: translateY(-2px);
+    background-color:rgba(2, 116, 17, 0.712);
+  }
+ 
+  .premium-dialog .modal-content:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 45, 74, 0.3);
+  }
+   
+
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease;
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  .modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+  }
