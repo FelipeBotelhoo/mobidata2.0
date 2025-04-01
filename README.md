@@ -108,9 +108,17 @@ node server.js
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
 
+<br>
 
+## Futuras Implementações
+### 🔐 Área do Administrador
+![STATUS-PLANEJADO](https://img.shields.io/badge/STATUS-PLANEJADO-blue?style=flat-square) ![PRIORIDADE-MÉDIA](https://img.shields.io/badge/PRIORIDADE-MÉDIA-orange?style=flat-square)
+
+- [ ] Tela de login administrativo
+- [ ] Dashboard do usuário
 
 ## Contato *⃣
 | [<img src="https://avatars.githubusercontent.com/u/121906659?v=4" width=115><br><sub>Felipe Botelho</sub>](https://www.linkedin.com/in/felipe-botelho-167554255/) | 
 | :---: | 
+
   
