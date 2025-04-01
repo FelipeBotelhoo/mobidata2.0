@@ -10,6 +10,12 @@ tornando o processo mais acessível.<br>
 Este aplicativo oferece uma solução versátil e eficaz para suas necessidades de gerenciamento de usuários, <br> 
 apresentando uma plataforma de fácil utilização.  
 
+<br>
+
+ ## Prévia *⃣
+ 
+![Previa Mobidata](https://github.com/user-attachments/assets/fa85cb64-98de-416d-aa39-68e78346e6f5)
+
 
 <br> 
 
@@ -92,11 +98,6 @@ node server.js
 -  Certifique-se de seguir esses passos na ordem correta para garantir uma instalação e execução adequadas.
 
 <br>
-
- ## Prévia *⃣
- 
-![Captura de tela 2024-01-11 213158](https://github.com/FelipeBotelhoo/Mobidata/assets/121906659/372e4029-083b-4d5d-9e68-eb7976ac0bc7)
-
 
 
 ## 🛠️ Ferramentas Utilizadas 
