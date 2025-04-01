@@ -12,9 +12,9 @@ apresentando uma plataforma de fácil utilização.
 
 <br>
 
- ## Prévia *⃣
+ ## Demonstração *⃣
 
-![Previa Mobidata](https://github.com/user-attachments/assets/fa85cb64-98de-416d-aa39-68e78346e6f5)
+[![Live Demo Mobidata](https://img.shields.io/badge/🚀_Live_Demo-FF6B6B?style=for-the-badge&logo=vercel&logoColor=white)](https://mobidata2-0.vercel.app)
 
 
 <br> 
